@@ -1,0 +1,59 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Child {
+  """Example field (placeholder)"""
+  childExampleField: Int!
+}
+
+type Test {
+  """Example field (placeholder)"""
+  exampleField: Int!
+
+  """Example field (placeholder)"""
+  exampleField1: Int!
+
+  """Example field (placeholder)"""
+  exampleField2: String!
+
+  """Example field (placeholder)"""
+  child: Child!
+}
+
+type Query {
+  tests: [Test!]!
+  test(id: Int!): Test!
+  child(id: Int!): Child!
+}
+
+type Mutation {
+  createTest(createTestInput: CreateTestInput!): Test!
+  updateTest(updateTestInput: UpdateTestInput!): Test!
+  removeTest(id: Int!): Test!
+  createChild(createChildInput: CreateChildInput!): Child!
+  updateChild(updateChildInput: UpdateChildInput!): Child!
+  removeChild(id: Int!): Child!
+}
+
+input CreateTestInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateTestInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateChildInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateChildInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
